@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<grid>
+	<row weight="45">
+		<grid>
+			<row>
+				<button id="btn_s1" text="bill" 	ontap="s1" image="img/bnw/icon_c16.jpg" scale="fill"/>
+				<button id="btn_s2" text="zoey" 	ontap="s2" image="img/bnw/icon_c14.jpg" scale="fill"/>
+				<button id="btn_s3" text="francis"	ontap="s3" image="img/bnw/icon_c27.jpg" scale="fill"/>
+				<button id="btn_s4" text="louis" 	ontap="s4" image="img/bnw/icon_c21.jpg" scale="fill"/>
+			</row>
+			<row>
+				<button id="btn_s5" text="ellis" 	ontap="s5" image="img/bnw/icon_c23.jpg" scale="fill"/>
+				<button id="btn_s6" text="coach" 	ontap="s6" image="img/bnw/icon_c13.jpg" scale="fill"/>
+				<button id="btn_s7" text="rochelle" 	ontap="s7" image="img/bnw/icon_c25.jpg" scale="fill"/>
+				<button id="btn_s8" text="nick" 	ontap="s8" image="img/bnw/icon_c06.jpg" scale="fill"/>
+			</row>
+		</grid>
+	</row>
+	<row weight="5">
+		<label id="lbl_survivor" text="survivor = all" color="blue" />
+	</row>
+	<row weight="8">
+		<grid weight="10">
+			<text id="txt_command" onChange="change" />
+		</grid>
+		<grid weight="2">
+			<button text="SEND" ontap="send" />
+		</grid>
+	</row>
+	<row weight="4">
+	</row>
+	<row weight="60">
+		<tabs color="#5f9ea0">
+			<tab text="Main" color="#91a3b0">
+				<row>
+					<button text="GOD MODE" ontap="god" />
+					<button text="REVIVE" ontap="revive" />
+					<button text="REVIVE COUNT RESET" ontap="revive_reset" />
+				</row>
+				<row>
+					<button text="INF AMMO" ontap="inf_ammo" />
+					<button text="INF EXPLOSIVE AMMO" ontap="explosive_ammo" />
+					<button text="INF INCENDIARY AMMO" ontap="incendiary_ammo" />
+				</row>
+				<row>
+					<button text="MOVE" ontap="move_bot" />
+					<button text="TELEPORT" ontap="warp_bot" />
+					<button text="TELEPORT TARGET" ontap="warp_target_bot" />
+				</row>
+			</tab>
+
+			<tab text="Weapon" color="#91a3b0">
+				<row>
+					<button text="AK-47" ontap="ak47" />
+					<button text="AWP" ontap="awp" />
+					<button text="MP5" ontap="mp5" />
+					<button text="Chainsaw" ontap="chainsaw" />
+				</row>
+				<row>
+					<button text="FIRST AID KIT" ontap="first_aid" />
+				</row>
+			</tab>
+
+			<tab text="Spawn" color="#91a3b0">
+				<row>
+					<button text="AMMO" ontap="spawn_ammo" />
+					<button text="FIRST AID KIT" ontap="spawn_first_aid" />
+					<button text="MOLOTOV" ontap="spawn_molotov" />
+					<button text="PIPE BOMB" ontap="spawn_pipe_bomb" />
+					<button text="BILE BOMB" ontap="spawn_bile_bomb" />
+				</row>
+				<row>
+					<button text="GAS CAN" ontap="spawn_gascan" />
+					<button text="FIREWORK" ontap="spawn_firework" />
+					<button text="OXYGEN TANK" ontap="spawn_oxygen" />
+					<button text="PROPANE TANK" ontap="spawn_propane" />
+					<button text="BARREL" ontap="spawn_barrel" />
+				</row>
+				<row>
+					<button text="BARRICADE 1" ontap="spawn_bar1" />
+					<button text="BARRICADE 2" ontap="spawn_bar2" />
+					<button text="BARRICADE 3" ontap="spawn_bar3" />
+					<button text="BARRICADE 4" ontap="spawn_bar4" />
+				</row>
+			</tab>
+		</tabs>
+	</row>
+</grid>
+</layout>
